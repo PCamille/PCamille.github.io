@@ -1,80 +1,106 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"/>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="style.css" rel="stylesheet"/>
+    <link href="print.css" rel="stylesheet" media="print"/>
     <title>CV - Camille Priou</title>
 </head>
 <body>
+<article>
     <header>
-        <h1>Camille Priou</h1>
+        <div class="picture">
+            <img alt="profile picture" height=140px src="resources/picture.jpg">
+        </div>
+        <div class="name">
+            <h1>Camille Priou</h1>
+            <div class="sub-h1">Back-end developer</div>
+        </div>
+        <div class="contact">
+            <p>camille@priou.dev <img alt="mail icon" src="resources/mail.svg"></p>
+            <p>+33 6 20 20 76 89 <img alt="phone icon" src="resources/phone.svg"></p>
+            <p>Brussels, Belgium <img alt="map pin icon" src="resources/map-pin.svg"></p>
+            <!--<p>Car license <img alt="car icon" src="resources/car.svg"></p>-->
+        </div>
     </header>
     <main>
-        <section>
-            <h2>About me</h2>
-            <p>Hello, I'm <strong>Camille Priou</strong>.</p>
-            <p>I'm a <strong>back-end developer</strong> specialized in <strong>C#</strong>.</p>
-        </section>
-        <section>
-            <h2>Work History</h2>
-            <h3>ING - September 2018-Now</h3>
-            <h4>Back-end developer</h4>
-            <p>
-                I'm in charge of the back-end development for internal applications.
-                The back-end is built with ASP.NET Core, the relation with the MS SQL database is managed with Entity-framework.
-                The applications are developed to respect ACPR (French Prudential Supervision and Resolution Authority) rules after a report made by them. That implies a great attention on application security and data integrity and a short delay to deploy a viable solution.
-            </p>
-            <h5>Developed application</h5>
-            <h6>KYC Workflow</h6>
-            <p>
-                The KYC Workflow (KYC for "Know Your Customers") is an application made to ensure that a customer provide all the correct mandatory documents inorder to open a bank account, and that old customer keep their documents updated.
-            </p>
-            <h4>Robotic developer</h4>
-            <p>
-                The mission of the robotic teams was to develop robots to secure and simplify the daily life work of employees.
-                We developed two type of robots, the first one just take control of an employee computer (or run on a dedicated virtual machine) to realise basic action instead of the human, and the second one has an interface where the user can access data from multiple sources and trigger automatic actions one multiple applications too.
-                A robot has the advantage to be quicker and safer than a human by avoiding careless error.
-                One of the major advantage of a robot is that it manipulates application by interact with interfaces designed for human and so you can ignore some security questions because it's already managed by the manipulated application.
-                You can also automate application which doesn't provide API for example, the 'Banque de France' website.
-            </p>
-            <h4>Scrum master</h4>
-            <p>In parallel of my mission as developer, I assume the role of scrum master inside my agile team. My role is, among other things, to ensure that all scrum events (stand-up, sprint planning, etc.) take place and are productive. As the youngest person in the team, it is a challenge to make my voice heard and respected.</p>
-            <p>Technologies used</p>
+        <div class="left">
+            <h3>Education</h3>
+            <ul>
+                <li>Epitech 2015-2019
+                    <!--European institute of technology-->
+                </li>
+                <li>Jönköping University Sweden 2013-2018
+                    <!--Engineering school-->
+                </li>
+                <li>Polytech Paris 2013-2015
+                    <!--Engineering school preparatory school-->
+                </li>
+            </ul>
+            <h3>Technical Skills</h3>
             <ul>
                 <li>C#</li>
-                <li>Microsoft COM object libraries</li>
+                <li>.NET</li>
+                <li>Entity Framework</li>
+                <li>SQL Server</li>
                 <li>Selenium</li>
                 <li>UI Automation</li>
-                <li>Windows Forms</li>
                 <li>VBA</li>
+                <li>Git</li>
+                <li>Microsoft tools</li>
             </ul>
-            <h3>Stime - May 2017-July 2017</h3>
-            <h4>Software developer - Intern</h4>
-            <p>I automate the generation of reports based on multiple sources as excel worksheets or SQL databases. The idea is to simplify the daily life of management teams by offer them corrected and updated production information.</p>
-            <p>Technologies used</p>
+            <h3>Languages</h3>
             <ul>
-                <li>ASP.NET</li>
-                <li>Microsoft COM object libraries</li>
-                <li>SQL Server</li>
+                <li>French, native language</li>
+                <li>English, professional level</li>
             </ul>
-        </section>
-        <section>
-            <h2>Education</h2>
-            <h3>EPITECH - 2015-2019</h3>
-            <h4>European Institute of Technology</h4>
-            <p>TODO</p>
-            <h3>JÖNKÖPING UNIVERSITY SWEDEN - 2017-2018</h3>
-            <h4>Engineering school</h4>
-            <p>TODO</p>
-            <h3>Polytech Paris - 2013-2015</h3>
-            <h4>Engineering school preparatory cycle</h4>
-            <p>TODO</p>
-        </section>
-        <section>
-            <h2>Skills</h2>
-            <p>TODO</p>
-        </section>
+            <h3>Hobbies</h3>
+            <ul>
+                <li>Cooking, vegetarian improvisation</li>
+                <li>Board games, friendship & betrayal</li>
+                <li>Video games, optimisation & strategy</li>
+            </ul>
+        </div>
+        <div class="right">
+            <h2>Work experience</h2>
+            <h3>ING, Paris - September 2018-Now</h3>
+            <h4>Back-end developer</h4>
+            <ul>
+                <li>In charge of the architecture, development, and deployment of the back-end</li>
+                <li>Assure the communication with the business after the deployment for maintenance and evolutions</li>
+            </ul>
+            <h4>Robotic developer</h4>
+            <ul>
+                <li>Develop small software to simplify the daily work of coworkers</li>
+                <li>Manipulate external web application with Selenium or UI Automation when no public API exists</li>
+            </ul>
+            <h4>Scrum Master</h4>
+            <ul>
+                <li>Plan scrum events (stand-ups, sprint planning, etc.) and ensure that they are productive</li>
+            </ul>
+            <h3>Stime, Paris - May 2017-July 2017</h3>
+            <h4>Software developer - Intern</h4>
+            <ul>
+                <li>Automation of reports generation based on multiple sources (sql, excel worksheets)</li>
+                <li>Update of the website used to follow store directors formation</li>
+            </ul>
+            <h2>Projects</h2>
+            <h3>KYC (“Know your customers”) Workflow — ING</h3>
+            <ul>
+                <li>Workflow to help analysts to check the customer documents</li>
+                <li>Automatic data streams with external companies</li>
+                <li>Storage personal data in respect of RGPD laws</li>
+            </ul>
+            <h3>CAM (“Customer alert monitoring”) Center — ING</h3>
+            <ul>
+                <li>Centralisation of alerts regarding money laundering and financing of terrorism</li>
+                <li>More than 10 different alert types with their own workflow</li>
+                <li>Application developed to respect the ACPR (“French Prudential Supervision and Resolution Authority”) regulation
+                </li>
+            </ul>
+        </div>
     </main>
+</article>
 </body>
 </html>
