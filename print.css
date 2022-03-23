@@ -1,8 +1,14 @@
-@page {
-    margin: 0;
-    size: A4 portrait;
-}
+@media print {
+    @page {
+        margin: 0;
+        size: A4 portrait;
+    }
 
-body {
-    background-color: white;
+    body {
+        background-color: white;
+    }
+
+    nav {
+        display: none;
+    }
 }
