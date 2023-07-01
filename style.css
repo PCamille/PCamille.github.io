@@ -25,13 +25,14 @@ h1 {
 }
 
 .sub-h1 {
+    padding-top: 16px;
     padding-left: 16px;
     font-size: larger;
 }
 
 .picture {
     grid-column: 1;
-    padding-top: 8px;
+    padding-top: 16px;
     padding-left: 24px;
     padding-bottom: 8px;
 }
@@ -47,7 +48,7 @@ h1 {
     text-align: right;
 }
 
-main {
+.fakeMain {
     background: white;
     color: black;
     padding: 16px;
