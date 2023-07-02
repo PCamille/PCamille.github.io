@@ -16,7 +16,7 @@ header {
     color: white;
     padding: 8px;
     display: grid;
-    grid-template-columns: 25% auto 25%;
+    grid-template-columns: 25% auto 35%;
     line-height: 12px;
 }
 
